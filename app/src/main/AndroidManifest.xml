@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lulufindy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBc_QI1nh9EfLlCSdcTEUPjNhTYtCX2viI" />
+
+        <activity
+            android:name=".Sing_In"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LuluFindy.Splash" />
+
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".Calendar" android:exported="false" />
+        <activity android:name=".ManagementMap2" android:exported="false" />
+        <activity android:name=".ParkingSpaceSituation" android:exported="false" />
+        <activity android:name=".WorkingHours" android:exported="false" />
+        <activity android:name=".Management" android:exported="false" />
+        <activity android:name=".ManagementMap" android:exported="false" android:label="Προσθήκη Θέσης" />
+        <activity android:name=".AddParking" android:exported="false" />
+        <activity android:name=".ResetPassword" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".WalletManagerActivity" android:exported="false" />
+        <activity android:name=".WalletPayActivity" android:exported="false" />
+        <activity android:name=".ApplePayActivity" android:exported="false" />
+        <activity android:name=".CardPaymentSuccessActivity" android:exported="false" />
+        <activity android:name=".CardPaymentActivity" android:exported="false" />
+        <activity android:name=".GooglePayActivity" android:exported="false" />
+        <activity android:name=".StartDisabledParking" android:exported="false" android:label="@string/title_activity_start_disabled_parking" />
+        <activity android:name=".StartElectricParking" android:exported="false" android:label="@string/title_activity_start_electric_parking" />
+        <activity android:name=".StartClassicParking" android:exported="false" android:label="@string/title_activity_start_classic_parking" />
+        <activity android:name=".Payment" android:exported="false" />
+        <activity android:name=".StartParking" android:exported="false" />
+        <activity android:name=".DisabledParking" android:exported="false" android:label="@string/title" />
+        <activity android:name=".ElectricParking" android:exported="false" android:label="@string/title" />
+        <activity android:name=".ClassicParking" android:exported="false" android:label="@string/title" />
+        <activity android:name=".Sign_Up" android:exported="false" android:theme="@style/Theme.Material3.Light.NoActionBar" />
+
+        <activity android:name=".AdminMainActivity" android:exported="true" android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity android:name=".Charts" />
+        <activity android:name=".Parking_History" />
+        <activity android:name=".Payment_History" />
+        <activity android:name=".Time_History" />
+        <activity android:name=".ChartsAdmin" />
+        <activity android:name=".Positions_Charts_Admin" />
+        <activity android:name=".Incomes_Admin" />
+        <activity android:name=".IncomesChart_Admin" />
+
+    </application>
+
+</manifest>

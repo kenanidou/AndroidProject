@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background"
+    tools:context=".ParkingSpaceSituation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            app:srcCompat="@drawable/lulu_findy_logo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Κατάσταση Θέσης"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteSearch"
+            android:layout_width="350dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/pink_hover"
+            android:hint="Αναζήτηση θέσης"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:dropDownVerticalOffset="10dp"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/SpecialLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="Ενεργή/ Ανενεργή"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/SpecialSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/pink_hover"
+                android:trackTint="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Αποθήκευση" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#ED6091"
+            android:text="@string/backArray"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+</ScrollView>

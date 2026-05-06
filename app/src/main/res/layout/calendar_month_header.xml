@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView android:layout_weight="1" android:text="ΔΕΥ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΤΡΙ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΤΕΤ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΠΕΜ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΠΑΡ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΣΑΒ" style="@style/WeekDayStyle" />
+        <TextView android:layout_weight="1" android:text="ΚΥΡ" style="@style/WeekDayStyle" />
+    </LinearLayout>
+</LinearLayout>

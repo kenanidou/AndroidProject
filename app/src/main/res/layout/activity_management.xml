@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/management1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="202dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="392dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/management2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/management3" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="191dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="135dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/masnagement4" />
+
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink_hover"
+        android:text="@string/backArray"
+        android:textColor="#F4EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="341dp"
+        android:layout_marginEnd="13dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Προσθήκη Χώρου Στάθμευσης"
+            android:textColor="#F6F4F4" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Καθορισμός Ωραρίου Λειτουργίας"
+            android:textColor="#EDEBEB" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Ενεργοποίηση / Απενεργοποίηση Χώρου"
+            android:textColor="#F6F1F1" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Οπτικοποίηση &amp; Αναζήτηση Χώρων"
+            android:textColor="#F6F1F1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

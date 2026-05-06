@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="192dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="LuLu Findy Logo"
+            android:src="@drawable/lulu_findy_logo" />
+
+
+        <TextView
+            android:id="@+id/payment_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Ποσό πληρωμής: €0.00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="37dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Wallet Icon"
+                android:src="@drawable/ic_wallet_code" />
+
+            <TextView
+                android:id="@+id/wallet_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Διαθέσιμο υπόλοιπο: €0.00"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/balance_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="⚠️ Μη επαρκές υπόλοιπο"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink_hover"
+                android:text="Πληρωμή" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_wallet_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Διαχείριση Πορτοφολιού" />
+    </LinearLayout>
+</ScrollView>

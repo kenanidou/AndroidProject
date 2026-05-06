@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "806943785065",
+    "project_id": "lulufindy-d81db",
+    "storage_bucket": "lulufindy-d81db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806943785065:android:af739a8657c28d9646e2f8",
+        "android_client_info": {
+          "package_name": "com.example.lulufindy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACmaTRJSWoCX-8CPEf8DVj6iwvDVeUyfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

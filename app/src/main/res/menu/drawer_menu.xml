@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_parking"
+        android:icon="@drawable/ic_parking"
+        android:title="@string/parked" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/wallet3" />
+
+    <item
+        android:id="@+id/nav_charts"
+        android:icon="@drawable/chart1"
+        android:title="Στατιστικά" />
+
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout" android:title="@string/logout" />
+
+</menu>

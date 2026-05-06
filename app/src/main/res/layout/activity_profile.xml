@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background"
+    android:padding="16dp">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            app:srcCompat="@drawable/lulu_findy_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Διαχείρηση Προφίλ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_input"
+                android:background="@color/pink_hover"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Όνομα">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_input"
+                android:background="@color/pink_hover"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Επώνυμο">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name_input"
+                android:background="@color/pink_hover"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Παλιός Κωδικός"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/old_password_input"
+                android:background="@color/pink_hover"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Νέος Κωδικός (προαιρετικό)"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input"
+                android:background="@color/pink_hover"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Ενημέρωση Προφίλ" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="@string/backArray" />
+
+
+    </LinearLayout>
+
+</ScrollView>

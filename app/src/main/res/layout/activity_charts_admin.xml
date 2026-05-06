@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="107dp"
+        android:contentDescription="@string/chart1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/chart1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="202dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="362dp"
+        android:contentDescription="@string/chart2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/chart2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/chart3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/charts3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink_hover"
+        android:text="@string/backArray"
+        android:textColor="#F4EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="324dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="13dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614">
+
+        <Button
+            android:id="@+id/btn_positionsAdmin"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="@string/positions_choice"
+            android:textColor="#F6F4F4" />
+
+        <Button
+            android:id="@+id/btnIncomesAdmin"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="@string/incomes_history"
+            android:textColor="#EDEBEB" />
+
+        <Button
+            android:id="@+id/btnIncomesChart"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="@string/incomes_choice"
+            android:textColor="#F6F1F1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

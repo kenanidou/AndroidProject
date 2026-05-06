@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background"
+    tools:context=".WorkingHours">
+
+    <LinearLayout
+        android:id="@+id/working_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            app:srcCompat="@drawable/lulu_findy_logo" />
+
+        <TextView
+            android:id="@+id/Workingtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ωράριο Λειτουργίας"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="276dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pink_hover"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:gravity="center"
+            android:hint="Επιλέξτε Ημερομηνία"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#A0A0A0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Από ώρα"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="@color/pink_hover">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFromTime"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="@color/pink_hover"
+                android:backgroundTint="@color/pink_hover"
+                android:focusable="false"
+                android:inputType="none"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Έως ώρα"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="@color/pink_hover">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editToTime"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="@color/pink_hover"
+                android:backgroundTint="@color/pink_hover"
+                android:focusable="false"
+                android:inputType="none"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/holidayLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Αργία"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="12dp" />
+
+            <Switch
+                android:id="@+id/holidaySwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/pink_hover"
+                android:trackTint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/SpecialLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ειδικό Event"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="12dp" />
+
+            <Switch
+                android:id="@+id/SpecialSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/pink_hover"
+                android:trackTint="@color/white" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink_hover"
+            android:text="Αποθήκευση"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#ED6091"
+            android:text="@string/backArray"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+</ScrollView>

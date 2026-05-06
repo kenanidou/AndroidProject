@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_gradient_background"
+    tools:context=".Sign_Up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/lulu_findy_logo"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/Sing_up"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="160dp"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintOverlap" />
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ED6091"
+                android:hint="@string/name"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ED6091"
+                android:hint="@string/last_name"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:background="#ED6091"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/email"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="272dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ED6091"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sign_up"
+            android:layout_width="183dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#ED6091"
+            android:text="@string/sign_up"
+            android:textSize="20sp"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/withAccount"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/already_have_an_account"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintOverlap" />
+
+        <TextView
+            android:id="@+id/Sing_in_page"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/sign_in"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintOverlap,VisualLintBounds" />
+
+    </LinearLayout>
+</ScrollView>
