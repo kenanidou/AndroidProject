@@ -1,4 +1,5 @@
 📱 LuluFindy Application Setup & User Guide
+
 Step 1: Installation & Initial Setup
 Install Android Studio
 
