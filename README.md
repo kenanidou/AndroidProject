@@ -5,8 +5,7 @@
 Download and install Android Studio (Electric Eel | 2022.1.1 – January 12, 2023).
 
 📥 Clone the Project
-Go to the GitHub repository:
-https://github.com/evageliakazaki/LuluFindy.git
+Go to the GitHub repository: https://github.com/kenanidou/AndroidProject)
 Click the green “Code” button and copy the repository URL.
 Open Android Studio and select “Get from VCS”.
 Paste the URL and clone the project.
